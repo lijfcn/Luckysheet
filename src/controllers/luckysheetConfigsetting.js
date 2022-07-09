@@ -1,4 +1,5 @@
 const luckysheetConfigsetting = {
+    showVerificationDrownDownButton:true,//Li Jinfu
     autoFormatw: false,
     accuracy: undefined,
     total: 0,

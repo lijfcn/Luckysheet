@@ -89,6 +89,7 @@ luckysheet.create = function (setting) {
     server.loadSheetUrl = extendsetting.loadSheetUrl;
     server.allowUpdate = extendsetting.allowUpdate;
 
+    luckysheetConfigsetting.showVerificationDrownDownButton = extendsetting.showVerificationDrownDownButton;
     luckysheetConfigsetting.autoFormatw = extendsetting.autoFormatw;
     luckysheetConfigsetting.accuracy = extendsetting.accuracy;
     luckysheetConfigsetting.total = extendsetting.data[0].total;

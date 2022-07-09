@@ -282,3 +282,9 @@ Luckysheet是MIT许可的开源项目，其持续稳定的开发离不开这些�
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2020-present, mengshukeji
+
+## 更新日志
+### Version 2.1.14
+- [2022-07-09] 添加 showVerificationDrownDownButton 配置：下拉列表单元格是否显示下拉箭头
+controllers/luckysheetConfigsetting.js
+controllers/dataVerificationCtrl.js

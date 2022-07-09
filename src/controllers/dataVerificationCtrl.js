@@ -15,6 +15,7 @@ import sheetmanage from './sheetmanage';
 import { getSheetIndex, getRangetxt } from '../methods/get';
 import locale from '../locale/locale';
 import Store from '../store';
+import luckysheetConfigsetting from './luckysheetConfigsetting';
 
 const dataVerificationCtrl = {
     defaultItem: {
@@ -1059,12 +1060,16 @@ const dataVerificationCtrl = {
 
         //单元格数据验证 类型是 下拉列表
         if(item.type == 'dropdown'){
-            $("#luckysheet-dataVerification-dropdown-btn").show().css({
-                'max-width': col - col_pre,
-                'max-height': row - row_pre,
-                'left': col - 20,
-                'top': row_pre + (row - row_pre - 20) / 2
-            })
+            if(luckysheetConfigsetting.showVerificationDrownDownButton)
+            {
+                $("#luckysheet-dataVerification-dropdown-btn").show().css({
+                    'max-width': col - col_pre,
+                    'max-height': row - row_pre,
+                    'left': col - 20,
+                    'top': row_pre + (row - row_pre - 20) / 2
+                })                
+            }
+
 
             if($("#luckysheet-dataVerification-dropdown-List").is(":visible")){
                 let dataIndex = $("#luckysheet-dataVerification-dropdown-List").prop("data-index");
